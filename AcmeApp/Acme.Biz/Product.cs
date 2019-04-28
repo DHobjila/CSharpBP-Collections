@@ -16,32 +16,46 @@ namespace Acme.Biz
         #region Constructors
         public Product()
         {
-            //var colorOptions = new string[4];
-            //colorOptions[0] = "Dragos";
-            //colorOptions[1] = "Claudiu";
-            //colorOptions[2] = "Senik";
-            //colorOptions[3] = "Justin";
+            // Working with Arrays
+            ////var colorOptions = new string[4];
+            ////colorOptions[0] = "Dragos";
+            ////colorOptions[1] = "Claudiu";
+            ////colorOptions[2] = "Senik";
+            ////colorOptions[3] = "Justin";
 
-            string[] colorOptions = { "Dragos", "Claudiu", "Senik", "Justin" };
+            //string[] colorOptions = { "Dragos", "Claudiu", "Senik", "Justin" };
 
-            //Array methods
-            var seeIndex = Array.IndexOf(colorOptions, "Claudiu");
-            colorOptions.SetValue("Luci", 2);
+            ////Array methods
+            //var seeIndex = Array.IndexOf(colorOptions, "Claudiu");
+            //colorOptions.SetValue("Luci", 2);
 
-            //looping through an Array
-            for (int i = 0; i < colorOptions.Length; i++)
-            {
-                colorOptions[i] = colorOptions[i].ToLower();
-            }
+            ////looping through an Array
+            //for (int i = 0; i < colorOptions.Length; i++)
+            //{
+            //    colorOptions[i] = colorOptions[i].ToLower();
+            //}
 
-            foreach (var item in colorOptions)
-            {
-                Console.WriteLine($"Name is: {item}");
-            }
+            //foreach (var item in colorOptions)
+            //{
+            //    Console.WriteLine($"Name is: {item}");
+            //}
 
-            Console.WriteLine(colorOptions[0]);
+            //Console.WriteLine(colorOptions[0]);
+            //=======================================================================
 
+            ////Working with Lists
+            //var nameList = new List<string>();
+            //nameList.Add("Dragos");
+            //nameList.Add("Claudiu");
+            //nameList.Add("Luci");
+            //nameList.Add("Senik");
+            //nameList.Insert(2, "Justin");
+            //nameList.Remove("Senik");
+           
 
+            var nameList = new List<string> { "Dragos", "Claudiu", "Justin", "Senik", "Luci" };
+
+            Console.WriteLine(nameList);
 
         }
         public Product(int productId,

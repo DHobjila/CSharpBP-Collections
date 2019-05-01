@@ -16,7 +16,7 @@ namespace Acme.Biz
         #region Constructors
         public Product()
         {
-            // Working with Arrays
+            #region Working with Arrays
             ////var colorOptions = new string[4];
             ////colorOptions[0] = "Dragos";
             ////colorOptions[1] = "Claudiu";
@@ -42,8 +42,8 @@ namespace Acme.Biz
 
             //Console.WriteLine(colorOptions[0]);
             //=======================================================================
-
-            ////Working with Lists
+            #endregion
+            #region Working with Lists
             //var nameList = new List<string>();
             //nameList.Add("Dragos");
             //nameList.Add("Claudiu");
@@ -51,11 +51,33 @@ namespace Acme.Biz
             //nameList.Add("Senik");
             //nameList.Insert(2, "Justin");
             //nameList.Remove("Senik");
-           
 
-            var nameList = new List<string> { "Dragos", "Claudiu", "Justin", "Senik", "Luci" };
 
-            Console.WriteLine(nameList);
+            //var nameList = new List<string> { "Dragos", "Claudiu", "Justin", "Senik", "Luci" };
+
+            //Console.WriteLine(nameList);
+            #endregion
+
+            #region Working with Dictionaries
+
+            //var states = new Dictionary<string, string>();
+            //states.Add("BT", "Botosani");
+            //states.Add("B", "Bucuresti");
+            //states.Add("BV", "Brasov");
+
+            // Initializing a dictionary
+            var states = new Dictionary<string, string>()
+            {
+                {"BT", "Botosani" },
+                {"B", "Bucuresti"},
+                {"BV", "Brasov" }
+            };
+
+            Console.WriteLine(states);
+
+
+
+            #endregion
 
         }
         public Product(int productId,
